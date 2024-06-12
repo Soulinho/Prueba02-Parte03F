@@ -1,0 +1,221 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+// Framework
+@import "../bootstrap-5.3.3/scss/bootstrap.scss";
+
+// Estilos
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/battle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.botonsito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonsito button {
+    color: red;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.pikachu {
+    position: relative;
+    width: 30vw;
+    height: 80vh; 
+}
+
+.pikachu img {
+    position: absolute;
+}
+
+.cuerpo {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.ojo {
+    height: auto;
+    z-index: 2;
+}
+
+.izquierdo {
+    top: 35%;
+    left: 32%;
+    width: 4vw;
+}
+
+.derecho {
+    top: 34.5%;
+    right: 35%;
+    width: 3.5vw;
+}
+
+.boca {
+    width: 18%;
+    height: auto;
+    top: 50%;
+    left: 40%;
+    z-index: 2;
+}
+
+.brazo {
+    width: 20%;
+    height: auto;
+    z-index: 2;
+}
+
+.brazo.izquierdo {
+    top: 60%;
+    left: 26%;
+}
+
+.brazo.derecho {
+    top: 59%;
+    right: 26%;
+}
+
+.cola {
+    width: 50%;
+    height: auto;
+    bottom: 20%;
+    left: 68%;
+    z-index: 0;
+}
+
+
+.pokebola2 {
+    display: none;
+}
+
+
+
+
+
+
+@media (max-width: 1280px) {
+    .pikachu {
+        width: 35vw;
+        height: 60vh;
+    }
+
+    .ojo {
+        width: 12%;
+    }
+
+    .boca {
+        width: 18%;
+    }
+
+    .brazo {
+        width: 20%;
+    }
+
+    .cola {
+        width: 35%;
+    }
+
+    .pokebola2 {
+        display: none;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .pikachu {
+        display: none;
+    }
+
+
+    .pokebola2 {
+        width: 10%;
+        display: block;
+    }
+
+    .pokebola {
+        display: none;
+    }
+
+
+    .botonsito button{
+        margin: 5vh;
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .pikachu {
+        width: 70vw;
+        height: 50vh;
+        display: none;
+    }
+
+    .ojo {
+        width: 15%;
+    }
+
+    .boca {
+        width: 20%;
+    }
+
+    .brazo {
+        width: 25%;
+    }
+
+    .cola {
+        width: 40%;
+    }
+
+    .pokebola2 {
+        display: none;
+    }
+
+    
+}
+
+
+
